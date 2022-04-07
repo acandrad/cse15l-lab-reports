@@ -6,18 +6,14 @@ Hello, this is a file called index on Github
 **This is in bold**
 
 List 1
-*Item 1
-
-*Item 2
-
-*Item 3
+* Item 1
+* Item 2
+* Item 3
 
 List 2
-1.Item 1
-
-2.Item 2
-
-3.Item 3
+1. Item 1
+2. Item 2
+3. Item 3
 
 [This is a link to my other website](https://acandrad.github.io/cse15l-lab-reports/newfile.html)
 
@@ -34,3 +30,14 @@ This is a block of code
 Code
 Code
 ```
+---
+These are new changes to index.md from vscode on my computer 
+
+**Bold words** 
+
+*Italic words*
+
+# A header
+## A subheader
+
+`End of changes`
