@@ -41,3 +41,7 @@ These are new changes to index.md from vscode on my computer
 ## A subheader
 
 `End of changes`
+
+[This is a link to the first lab report using the url](https://acandrad.github.io/cse15l-lab-reports/lab-report-1-week-2.html) 
+
+[This is a link to the first lab report using just the name](lab-report-1-week-2.html) 
