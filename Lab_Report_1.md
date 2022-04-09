@@ -62,4 +62,38 @@ with the "anw" replaced by the letters in your account
 ---
 
 ## Setting a SSH Key
+1. Run the following command on your computer       
+`$ ssh-keygen`  
+2. When asked where to save the file, use the format        
+`(/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/id_rsa`         
+to save it like ![this](Screenshots/Keygen_1.png)
+3. When prompted for a passphrase simply hit the enter key to set no password and your terminal should now look something like 
+```
+Your identification has been saved in /Users/<user-name>/.ssh/id_rsa.
+Your public key has been saved in /Users/<user-name>/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0 <user-name>@<system>.local
+The key's randomart image is:
++---[RSA 3072]----+
+|                 |
+|       . . + .   |
+|      . . B o .  |
+|     . . B * +.. |
+|      o S = *.B. |
+|       = = O.*.*+|
+|        + * *.BE+|
+|           +.+.o |
+|             ..  |
++----[SHA256]-----+
+```
+4. To copy the public key to the `.ssh` directory of your account on the server log onto the server using `ssh` and run the command 
+`$ mkdir .ssh`
+5. Logout from the server and run the command 
+`$ scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys` 
+using your account and computer information
+6. You should now be able to connect to the server from this client with no password like ![this](Screenshots/No_Pass.png)
+
+---
+
+## Optimizing Remote Running
 1. 
