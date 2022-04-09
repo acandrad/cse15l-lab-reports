@@ -21,6 +21,7 @@ List 2
 
 ---
 Horiozntal ruler
+
 ---
 
 `This is inline code` This is not inline code
