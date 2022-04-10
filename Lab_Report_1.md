@@ -86,14 +86,25 @@ The key's randomart image is:
 |             ..  |
 +----[SHA256]-----+
 ```
-4. To copy the public key to the `.ssh` directory of your account on the server log onto the server using `ssh` and run the command 
+4. To copy the public key to the `.ssh` directory of your account on the server log onto the server using `ssh` and run the command                               
 `$ mkdir .ssh`
-5. Logout from the server and run the command 
-`$ scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys` 
+5. Logout from the server and run the command   
+`$ scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
 using your account and computer information
 6. You should now be able to connect to the server from this client with no password like ![this](Screenshots/No_Pass.png)
 
 ---
 
 ## Optimizing Remote Running
-1. 
+1. Try to make remote running more optimized with the following hints:
+* Writing a command in quotes at the end of a `ssh` command directly runs it on the server then exits like  
+`$ ssh cs15lsp22zz@ieng6.ucsd.edu "ls"`
+* Use semicolons to run multiple commands on the same line like     
+`$ cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI`
+* Use the up-arrow on your keyboard to recall past commands
+2. One example of a more optimized execution of remote running is ![this](Screenshots/Optimized.png)
+as this copies and runs the command on the remote computer in one line
+
+---
+
+The source for this report and some of the code used was the lab writeup at [this link](https://docs.google.com/document/d/1AO6RDoJnaWxMui-UFjEa_2bbQ4qcANpbIpPuV-awsOg/edit)
