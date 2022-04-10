@@ -89,7 +89,7 @@ The key's randomart image is:
 4. To copy the public key to the `.ssh` directory of your account on the server log onto the server using `ssh` and run the command                               
 `$ mkdir .ssh`
 5. Logout from the server and run the command   
-`$ scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+`$ scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys`        
 using your account and computer information
 6. You should now be able to connect to the server from this client with no password like ![this](Screenshots/No_Pass.png)
 
