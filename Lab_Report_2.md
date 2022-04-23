@@ -9,4 +9,4 @@ Spring 2022
 
 One of the changes I made to markdownparser.java in order to fix a bug was ![this](Screenshots/Code_Change_1.png)
 
-The test file that caused a *failure-inducing input* can be found at [this_link](Lab_3_Tests/test2.md) 
+The test file that caused a *failure-inducing input* can be found at [this_link](Lab_3_Tests/test2.html) 

@@ -46,3 +46,7 @@ These are new changes to index.md from vscode on my computer
 [This is a link to the first lab report using the url](https://acandrad.github.io/cse15l-lab-reports/lab-report-1-week-2.html) 
 
 [This is a link to the first lab report using just the name](lab-report-1-week-2.html) 
+
+Here is a link to my first lab report from week 2 [here](Lab_Report_1.html)
+
+Here is a link to my second lab report from week 4 [here](Lab_Report_2.html)
