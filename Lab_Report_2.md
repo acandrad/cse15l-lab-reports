@@ -9,7 +9,7 @@ Spring 2022
 
 One of the changes I made to `MarkdownParse.java` in order to fix a bug was ![this](Screenshots/Code_Change_1.png)
 
-The test file that caused a *failure-inducing input* can be found at [this_link](/Users/alexandrade/Documents/GitHub/cse15l-lab-reports/Lab_3_Tests/test2.md) 
+The test file that caused a *failure-inducing input* can be found at [this_link](cse15l-lab-reports/Lab_3_Tests/test2.md) 
 
 The *symptom* of the *failure-inducing input* was that `[image.png, linktosomething.com]` was printed out on the command line as shown ![here](Screenshots/Symptom_1.png) 
 
