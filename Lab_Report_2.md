@@ -9,7 +9,7 @@ Spring 2022
 
 One of the changes I made to `MarkdownParse.java` in order to fix a bug was ![this](Screenshots/Code_Change_1.png)
 
-The test file that caused a *failure-inducing input* can be found at [this_link](https://github.com/acandrad/cse15l-lab-reports/blob/main/Lab_3_Tests/test2.md?plain=1) 
+The test file that caused a *failure-inducing input* can be found at [this link](https://github.com/acandrad/cse15l-lab-reports/blob/main/Lab_3_Tests/test2.md?plain=1) 
 
 The *symptom* of the *failure-inducing input* was that `[image.png, linktosomething.com]` was printed out on the command line as shown ![here](Screenshots/Symptom_1.png) 
 
@@ -21,7 +21,7 @@ The relationship between the bug, the symptom, and the failure-inducing input wa
 
 Another change I made to `MarkdownParse.java` in order to fix a bug was ![this](Screenshots/Code_Change_2.png)
 
-The test file that caused a *failure-inducing input* can be found at [this_link](https://github.com/acandrad/cse15l-lab-reports/blob/main/Lab_3_Tests/test5.md?plain=1)
+The test file that caused a *failure-inducing input* can be found at [this link](https://github.com/acandrad/cse15l-lab-reports/blob/main/Lab_3_Tests/test5.md?plain=1)
 
 The *symptom* of the *failure-inducing input* was that a `StringIndexOutOfBoundsException` error was printed out on the command line as shown ![here](Screenshots/Symptom_2.png)
 
@@ -33,7 +33,7 @@ The relationship between the bug, the symptom, and the failure-inducing input wa
 
 A third change I made to `MarkdownParse.java` in order to fix a bug was ![this](Screenshots/Code_Change_3.png)
 
-The test file that caused a *failure-inducing input* can be found at [this_link](https://github.com/acandrad/cse15l-lab-reports/blob/main/Lab_3_Tests/test6.md?plain=1)
+The test file that caused a *failure-inducing input* can be found at [this link](https://github.com/acandrad/cse15l-lab-reports/blob/main/Lab_3_Tests/test6.md?plain=1)
 
 The *symptom* of the *failure-inducing input* was that a `StringIndexOutOfBoundsException` error was printed out on the command line as shown ![here](Screenshots/Symptom_3.png)
 
