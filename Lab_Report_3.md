@@ -13,10 +13,10 @@ Spring 2022
 ---
 
 ## Setup Github Access from ieng6
-1. You will need to create a public and private key pair on your remote account using `ssh-keygen` like ![here](Screenshots/RemoteKeys.png) as you can see both the public and private key are now on the remote server.
+1. You will need to create a public and private key pair on your remote account using `ssh-keygen` like ![here](Screenshots/RemoteKeys.png) as you can see both the public and private key are now on the remote server and the contents of the public key look like ![this](Screenshots/PubKey.png).
 2. Next, you need to add your public key to Github and you can follow [this link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to find out how to add SSH keys to your Github account and your public key should look like ![this](Screenshots/PubKeyGithub.png)
 3. Then, you will have to run ```eval `ssh-agent -s` ``` and `ssh add` with the name of your private key like ![this](Screenshots/SSHAgent.png) 
-in order to remotely access Github.
+in order to remotely access Github.         
 4. Now that both Github and the remote account have the public keys, you can commit and push changes to Github from your remote account like ![this](Screenshots/RemoteGit.png) and these changes will now show up on your Github account under commits like [here](https://github.com/acandrad/SkillDemo/commit/65b1f94f9ca679aa8bdbd54f4a6c399816ed0752)
 
 ---
