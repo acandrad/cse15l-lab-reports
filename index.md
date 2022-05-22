@@ -58,3 +58,5 @@ Here is a link to my first lab report from week 2 [here](Lab_Report_1.html)
 Here is a link to my second lab report from week 4 [here](Lab_Report_2.html)
 
 Here is a link to my third lab report from week 6 [here](Lab_Report_3.html)
+
+Here is a link to my fourth lab report from week 8 [here](Lab_Report_4.html)
