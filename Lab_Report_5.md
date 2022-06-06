@@ -27,16 +27,16 @@ My implementation outputted an empty ArrayList correctly like `[]` while the pro
 
 The expected links in the output are no links and so the output should be an empty list like `[]` and so we can see that my implementation on the left is correct.
 
-For the provided implementation, the bug that causes this incorrect output is 
+For the provided implementation, the bug that causes this incorrect output is ![here](Screenshots/Change201.png) and I believe the bug is here because we are incorrectly adding a link when we shouldn't be. Thus, the bug is the fact that `baz` passes the checks for a link when it shouldn't so the bug is that the method doesn't check for `<` or `>` as I believe those symbols are what is keeping this from becoming a real link. Therefore the program is wrong as it doesn't check for `<` or `>` even though those will change the output and so incorrectly add a link when it shouldn't.
 
-## Markdown Test Difference 2-Test 432
+## Markdown Test Difference 2-Test 481
 
-[Here](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/432.md?plain=1) is
+[Here](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/481.md?plain=1) is
 a link to the test-file that produced different results between my implementation and the
 provided implementation.
 
-By using [the CommonMark demo site](https://spec.commonmark.org/dingus/), I decided that `432.md` should produce this ![code](Screenshots/Right432.png) which means that there should be a link to `/url` and so the output should be 
-`[/url]`
+By using [the CommonMark demo site](https://spec.commonmark.org/dingus/), I decided that `481.md` should produce this ![code](Screenshots/Right432.png) which means that there should be a link to `/uri "title"` and so the output should be 
+`[/uri ]`
 
 Thus, by using CommonMark, we can see that the implementation on the right, which is the provided implementation, 
 is correct for this test and so my implementation is wrong for this test.
