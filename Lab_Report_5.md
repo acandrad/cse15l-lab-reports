@@ -23,7 +23,7 @@ running `getLinks` and thus the output should be an empty ArrayList and so shoul
 Thus, by using CommonMark, we can see that the implementation on the left, which is my implementation, is correct
 for this test and so the provided implementation is wrong for this test.
 
-My implementation outputted an empty ArrayList correctly like `[]` while the provided implementation outputted `[baz]` as shown ![here](Screenshots/Diff1.png)
+My implementation outputted an empty ArrayList correctly like `[]` while the provided implementation incorrectly outputted `[baz]` as shown ![here](Screenshots/Diff1.png)
 
 The expected links in the output are no links and so the output should be an empty list like `[]` and so we can see that my implementation on the left is correct.
 
@@ -35,14 +35,15 @@ For the provided implementation, the bug that causes this incorrect output is ![
 a link to the test-file that produced different results between my implementation and the
 provided implementation.
 
-By using [the CommonMark demo site](https://spec.commonmark.org/dingus/), I decided that `481.md` should produce this ![code](Screenshots/Right432.png) which means that there should be a link to `/uri "title"` and so the output should be 
-`[/uri ]`
+By using [the CommonMark demo site](https://spec.commonmark.org/dingus/), I decided that `481.md` should produce this ![code](Screenshots/Right481.png) which means that there should be a link to `/uri "title"` and so the output should be 
+`[/uri "title"]`
 
-Thus, by using CommonMark, we can see that the implementation on the right, which is the provided implementation, 
-is correct for this test and so my implementation is wrong for this test.
+Thus, by using CommonMark, we can see that the implementation on the left, which is my implementation, 
+is correct for this test and so the provided implementation is wrong for this test.
 
-My implementation outputted an empty ArrayList like `[]` 
-while the provided implementation outputted the correct list like `[/url]` as shown ![here](Screenshots/Diff2.png)
+My implementation outputted the correct list like `[/uri "title"]` 
+while the provided implementation incorrectly outputted an empty ArrayList like `[]` as shown ![here](Screenshots/Diff2.png)
 
-The expected link in the output is simply `/url` and so the output should be `[/url]` and so we can see that the 
-provided implementation on the right is correct. 
+The expected link in the output is simply `/uri "title"` and so the output should be `[/uri "title"]` and so we can see that my implementation on the left is correct. 
+
+For the provided implementation, the bug that causes this incorrect output is ![here](Screenshots/Change481.png) and I believe the bug is here because we are not adding a link when we should be adding one. Thus, the bug is the fact that `/uri "title"` doesn't pass the check for a link when it should and I believe it doesn't pass this check as the link is only added if it has no space in it. However, based on the CommonMark output, we know that this link with a space is valid so the provided implementation is incorrectly discarding this link due to it having a space even though a link containing a space is a valid link. 
